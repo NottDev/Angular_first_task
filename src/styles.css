@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+body{
+    background: rgb(58, 11, 66);
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(assets/font/Quicksand-Regular.ttf) format("opentype");
+}
+
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}

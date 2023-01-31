@@ -1,0 +1,39 @@
+
+div {
+    font-family: 'quicksand';
+}
+
+h1, h2 {
+    color: wheat;
+}
+
+.main_title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator_container {
+    background: rgb(97, 19, 111);
+    box-shadow: 10px 10px 5px;
+}

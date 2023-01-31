@@ -1,0 +1,23 @@
+<div class="container">
+<form [formGroup]="calculatorForm">
+    <h1 class="title">Suma</h1>
+    <div class="input_container">
+        <label>Valor 1</label>
+        <input formControlName="number1" type="number" id="value1" autocomplete="off">
+    </div>
+    <div class="input_container">
+        <label>Valor 2</label>
+        <input formControlName="number2" type="number" id="value2" autocomplete="off">
+    </div>
+    <div class="input_container">
+        <label>Resultado</label>
+        <div class="result_container">
+            <p>{{this.result}}</p>
+        </div>
+    </div>
+    <div class="operations">
+        <button type="button" (click)="sum()">Calcular</button>
+        <button type="reset">Limpiar</button>
+    </div>
+</form>
+</div>
