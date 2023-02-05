@@ -31,27 +31,6 @@ export class CalculatorComponent implements OnInit {
     console.log(this.checkerCondition(this.result));
   }
 
-  sub(){
-    let num1: number = +this.calculatorForm.value.number1
-    let num2: number = +this.calculatorForm.value.number2
-
-    this.result = num1 - num2;
-  }
-
-  multiply(){
-    let num1: number = +this.calculatorForm.value.number1
-    let num2: number = +this.calculatorForm.value.number2
-
-    this.result = num1 * num2;
-  }
-
-  divide(){
-    let num1: number = +this.calculatorForm.value.number1
-    let num2: number = +this.calculatorForm.value.number2
-
-    this.result = num1 / num2;
-  }
-
   checkerCondition(val:number):boolean{
     return (val >= 1 && val <= 10 && (val % 2 != 0));
   }
