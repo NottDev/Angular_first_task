@@ -20,8 +20,7 @@ export class CalculatorComponent implements OnInit {
     )
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   sum(){
     let num1: number = +this.calculatorForm.value.number1

@@ -20,13 +20,16 @@ export class DivideCalculatorComponent implements OnInit {
     )
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   divide(){
     let num1: number = +this.calculatorForm.value.number1
     let num2: number = +this.calculatorForm.value.number2
 
-    this.result = num1 / num2;
+    if (num2 == 0) {
+      this.result = 0;
+    } else {
+      this.result = num1 / num2;
+    }
   }
 }
